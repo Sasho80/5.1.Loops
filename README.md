@@ -5,3 +5,9 @@ Hints and Guidelines
 We can solve the problem using a for loop, via which we will pass through the numbers from 1 to 
 100 using the i variable, and print the numbers in the body of the loop.
 
+02.Example: Numbers up to 1000, Ending by 7
+Write a program that finds all numbers within the range [1 … 1000] that end in 7.
+Hints and Guidelines
+We can solve the problem by combining a for loop for passing through the numbers from 1 to 1000 
+and a condition to check if each of the numbers ends in 7. Of course, there are other solutions too, 
+but let's solve the problem using a loop + condition.
