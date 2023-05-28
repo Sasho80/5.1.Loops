@@ -11,3 +11,9 @@ Hints and Guidelines
 We can solve the problem by combining a for loop for passing through the numbers from 1 to 1000 
 and a condition to check if each of the numbers ends in 7. Of course, there are other solutions too, 
 but let's solve the problem using a loop + condition.
+
+03.Example: All Latin Letters
+Write a program that prints the letters of the English Alphabet: a, b, c, …, z.
+Hints and Guidelines
+It is good to know that the for loops don't only work with numbers. We can solve the task by running 
+a for loop that passes sequentially through all letters in the English alphabet.
