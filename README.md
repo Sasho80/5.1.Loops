@@ -17,3 +17,16 @@ Write a program that prints the letters of the English Alphabet: a, b, c, …, z
 Hints and Guidelines
 It is good to know that the for loops don't only work with numbers. We can solve the task by running 
 a for loop that passes sequentially through all letters in the English alphabet.
+
+04.Problem: Summing up Numbers
+Write a program that inputs n integers and sums them up.
+• The first line of the input holds the number of integers n.
+• Each of the following n lines holds an integer for summing.
+• Sum up the numbers and finally print the result.
+Sample Input and Output
+Input Output Input Output Input Output Input Output Input Output 
+2     30     3     -60    4     43     1     999    0     0
+10           -10          45           999
+20           -20         -20
+             -30          7
+                          11
