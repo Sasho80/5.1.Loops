@@ -30,3 +30,27 @@ Input Output Input Output Input Output Input Output Input Output
 20           -20         -20
              -30          7
                           11
+
+05.Problem: Max Number
+Write a program that enters n integers (n > 0) and finds the max number among them (the largest). 
+The first input line specifies the number of integers n. The next n lines hold the integers, one per line.
+Chapter 5.1. Loops (Repetitions) 195
+Sample Input and Output
+Input Output Input Output Input Output Input Output Input Output 
+2     100    3     20     4     99     1     999    2     -1
+100          -10          45           999          -1
+99           20           -20                       -2
+            -30            7
+                           99
+
+Guidelines and hints
+We can solve the largest number problem as follows:
+ Enter the number of numbers n.
+ We will read the first number separately and initialize the variable
+max with its value so we can compare subsequent numbers with it.
+ We create a loop starting at 1 (to skip the first number that
+we read separately) to n.
+ At each step we read a number and check if it is greater than
+the last found largest (i.e. the max variable) and if it is - we save
+its value in the variable max.
+ Finally we print the variable in which we store the largest number.
