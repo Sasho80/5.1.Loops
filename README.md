@@ -54,3 +54,19 @@ we read separately) to n.
 the last found largest (i.e. the max variable) and if it is - we save
 its value in the variable max.
  Finally we print the variable in which we store the largest number.
+
+06.Problem: Min Number
+Write a program that inputs n integers (n > 0) and finds the min number among them (the smallest 
+number). First enter the number of integers n, then n numbers additionally, one per line.
+Sample Input and Output
+Input Output 
+ 
+Input Output Input Output Input Output Input Output
+1     50     2     99     3     -30    4     -20
+50           100          -10          45     
+             99           20           -20
+                          -30          7
+                                       99
+Hints and Guidelines
+The problem is completely identical to the previous one, except this time we will start with another 
+neutral starting value.
