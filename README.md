@@ -115,3 +115,17 @@ We input the numbers one by one and calculate the two sums (of the numbers on ev
 the numbers on odd positions). Identically to the previous problem, we calculate the absolute value 
 of the difference and print the result ("Yes" + the sum in case of difference of 0 or "No" + the 
 difference in any other case).
+
+09.Problem: Sum of Vowels
+Write a program that inputs text (string), calculates and prints the sum of the values of vowels
+according to the table below:
+a e i o u 
+1 2 3 4 5
+Sample Input and Output
+Input Output Comments      Input  Output  Comments 
+hello 6      e+o = 2+4 = 6 bamboo 9     a+o+o = 1+4+4 = 9
+Input Output Comments
+hi    3      (i = 3) beer 4 e+e = 2+2 = 4
+Hints and Guidelines
+We read the input text s, null the sum and run a loop from 0 to s.Length-1 (text length -1). We 
+check each letter s[i] and verify if it is a vowel, and accordingly, add its value to the sum.
