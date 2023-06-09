@@ -129,3 +129,26 @@ hi    3      (i = 3) beer 4 e+e = 2+2 = 4
 Hints and Guidelines
 We read the input text s, null the sum and run a loop from 0 to s.Length-1 (text length -1). We 
 check each letter s[i] and verify if it is a vowel, and accordingly, add its value to the sum.
+
+10.Problem: Element Equal to the Sum of the Rest
+Write a program that inputs n integers and checks whether among them there is a number equal to 
+the sum of all the rest. If there is such an element, print "Yes" + its value, otherwise – "No" + the 
+difference between the largest element and the sum of the rest (by absolute value).
+Sample Input and Output
+Input Output  Comments           Input Output  Comments 
+7     Yes     3+4+1+2+1+1=12     3     No       8 |10 – (1 + 1)| = 8
+3     Sum=12                     1     Diff=1
+4                                1
+1                                10
+1
+2
+12
+1
+Input Output     Input Output    Input Output 
+3     No         3     No        4     Yes
+1     Diff=1     5     Diff=1    6     Sum=6
+1                5               1
+1                1               2
+                                 3
+Hints and Guidelines
+We must calculate the sum of all elements, find the largest of them and check the condition.
