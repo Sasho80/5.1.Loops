@@ -158,52 +158,21 @@ Write a program that reads n numbers and calculates the sum, the min and max val
 on even and odd positions (counted from 1). If there is no min / max element, print "No".
 Sample Input and Output
 Input Output         Input Output         Input Output 
-6     OddSum=9,      2     OddSum=1.5,    1
-2     OddMin=2,      1.5   OddMin=1.5,    1
-3     OddMax=5,      -2.5  OddMax=1.5,
-5     EvenSum=8,           EvenSum=-2.5,
-4     EvenMin=1,           EvenMin=-2.5,
-2     EvenMax=4            EvenMax=-2.5
+6     OddSum=9,      2     OddSum=1.5,    1     OddSum=1,
+2     OddMin=2,      1.5   OddMin=1.5,    1     OddMin=1,
+3     OddMax=5,      -2.5  OddMax=1.5,          OddMax=1,
+5     EvenSum=8,           EvenSum=-2.5,        EvenSum=0,
+4     EvenMin=1,           EvenMin=-2.5,        EvenSum=0,
+2     EvenMax=4            EvenMax=-2.5         EvenMax=No
 1
 
-
-OddSum=1,
-OddMin=1,
-OddMax=1,
-EvenSum=0,
-EvenMin=No,
-EvenMax=No
-Input Output Input Output Input Output 
-3
--1
--2
--3
-OddSum=-4,
-OddMin=-3,
-OddMax=-1,
-EvenSum=-2,
-EvenMin=-2,
-EvenMax=-2
- 1
- -5
-OddSum=-5,
-OddMin=-5,
-OddMax=-5,
-EvenSum=0,
-EvenMin=No,
-EvenMax=No
- 5
- 3
- -2
- 8
- 11
- -3
-OddSum=8,
-OddMin=-3,
-OddMax=8,
-EvenSum=9,
-EvenMin=-2,
-EvenMax=11
+Input Output         Input Output               Input Output 
+3     OddSum=-4,     1     OddSum=-5,           5     OddSum=8,
+-1    OddMin=-3,     -5    OddMin=-5,           3     OddMin=-3,
+-2    OddMax=-1,           OddMax=-5,           -2    OddMax=8,
+-3    EvenSum=-2,          EvenSum=0,            8    EvenSum=9,
+      EvenMin=-2,          EvenMin=No,          11    EvenMin=-2,
+      EvenMax=-2           EvenMax=No           -3    EvenMax=11
 Hints and Guidelines
 The task combines some of the previous tasks: finding the min and max value and sum, as well as 
 processing of elements on even and odd positions. Check them out.
