@@ -7,10 +7,10 @@ int main() {
 	double evenMin;
 	double oddMax;
 	double evenMax;
-	double oddSum=1;
-	double evenSum=1;
+	double oddSum = 1;
+	double evenSum = 1;
 	if (n < 3) {
-		if (n==0) {
+		if (n == 0) {
 			oddSum = 0;
 			evenSum = 0;
 		}
@@ -22,7 +22,7 @@ int main() {
 		else if (n == 2) {
 			cin >> oddMin;
 			cin >> evenMin;
-			oddMax = oddSum= oddMin;
+			oddMax = oddSum = oddMin;
 			evenMax = evenSum = evenMin;
 		}
 	}
@@ -30,60 +30,77 @@ int main() {
 		cin >> oddMin;
 		cin >> evenMin;
 		cin >> oddMax;
-		double num=oddMax;
+		double num = oddMax;
 		oddSum = oddMin + oddMax;
 		evenMax = evenSum = evenMin;
-		if (oddMin>num){
-			oddMax=oddMin;
+		if (oddMin > num) {
+			oddMax = oddMin;
 			oddMin = num;
 		}
 	}
-else {
+	else if (n == 4) {
+		cin >> oddMin;
+		cin >> evenMin;
+		cin >> oddMax;
+		double oddNum = oddMax;
+		cin >> evenMax;
+		double evenNum = evenMax;
+		oddSum = oddMin + oddMax;
+		evenSum = evenMin + evenMax;
+		if (oddMin > oddNum) {
+			oddMax = oddMin;
+			oddMin = oddNum;
+		}
+		if (evenMin > evenNum) {
+			evenMax = evenMin;
+			evenMin = evenNum;
+		}
+	}
+	else {
 		cin >> oddMin;
 		cin >> evenMin;
 		cin >> oddMax;
 		cin >> evenMax;
 		oddSum = oddMin + oddMax;
 		evenSum = evenMin + evenMax;
-	 for (int i = 1; i <= n - 4; i++)
-	 {
-		double num;
-		cin >> num;
-		if (i % 2 == 0) {
-
-			if (evenMax < num) {
-				evenMax = num;
-			}
-			evenSum += num;
-		}
-		else
+		for (int i = 1; i <= n - 4; i++)
 		{
-			if (oddMax < num) {
-				oddMax = num;
+			double num;
+			cin >> num;
+			if (i % 2 == 0) {
+				if (evenMax < num) {
+					evenMax = num;
+				}
+				evenSum += num;
 			}
-			oddSum += num;
-		}
-		if (i % 2 == 0) {
-			if (evenMin > num) {
-				evenMin = num;
+			else
+			{
+				if (oddMax < num) {
+					oddMax = num;
+				}
+				oddSum += num;
+			}
+			if (i % 2 == 0) {
+				if (evenMin > num) {
+					evenMin = num;
+				}
+			}
+			else {
+				if (oddMin > num) {
+					oddMin = num;
+				}
 			}
 		}
-		else {
-			if (oddMin > num) {
-				oddMin = num;
-			}
-		}
-	 }
-}
-	if (oddSum==0&&evenSum==0){
+	}
+	if (oddSum == 0 && evenSum == 0) {
 		cout << "oddSum= " << oddSum << endl;
 		cout << "oddMin= " << "No" << endl;
 		cout << "oddMax= " << "No" << endl;
 		cout << "evenSum= " << evenSum << endl;
 		cout << "evenMin= " << "No" << endl;
 		cout << "evenMax= " << "No" << endl;
-		}
-	else if (oddSum==0){
+	}
+	else if (oddSum == 0) {
 		cout << "oddSum= " << oddSum << endl;
 		cout << "oddMin= " << "No" << endl;
 		cout << "oddMax= " << "No" << endl;
@@ -91,7 +108,7 @@ else {
 		cout << "evenMin= " << evenMin << endl;
 		cout << "evenMax= " << evenMax << endl;
 	}
-	else if (evenSum==0) {
+	else if (evenSum == 0) {
 		cout << "oddSum= " << oddSum << endl;
 		cout << "oddMin= " << oddMin << endl;
 		cout << "oddMax= " << oddMax << endl;
