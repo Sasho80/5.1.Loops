@@ -37,8 +37,8 @@ int main() {
 			oddMax = oddMin;
 			oddMin = num;
 		}
-	}
-	else if (n == 4) {
+	 }
+else{
 		cin >> oddMin;
 		cin >> evenMin;
 		cin >> oddMax;
@@ -55,14 +55,6 @@ int main() {
 			evenMax = evenMin;
 			evenMin = evenNum;
 		}
-	}
-	else {
-		cin >> oddMin;
-		cin >> evenMin;
-		cin >> oddMax;
-		cin >> evenMax;
-		oddSum = oddMin + oddMax;
-		evenSum = evenMin + evenMax;
 		for (int i = 1; i <= n - 4; i++)
 		{
 			double num;
