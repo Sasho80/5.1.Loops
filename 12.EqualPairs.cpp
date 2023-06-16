@@ -28,7 +28,7 @@ int main() {
 			}
 		}
 	}
-	else if(n>1){
+	else if(n==2){
 		n = 2 * n;
 		for (i=1; i<=n / 2; i++)
 		{
@@ -45,6 +45,23 @@ int main() {
 				}
 			}
 		}
+	}
+	else if (n==3){
+		n = 2 * n;
+			for (i = 1; i <= n / 2; i++)
+			{
+				sum = 0;
+					for (j = i; j <= i + 1;j++)
+					{
+						int num;
+							cin >> num;
+							sum += num;
+							diff = abs(diff - num);
+						if (j == i + 1) {
+							previousSum = sum;
+						}
+					}
+			}
 	}
 	if (previousSum==sum){
 		cout << "Yes,value=" << sum << endl;
