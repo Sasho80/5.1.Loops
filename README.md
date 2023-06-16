@@ -179,3 +179,39 @@ processing of elements on even and odd positions. Check them out.
 In the current task it is better to work with fractions (not integers). The sum, the min and the max 
 value will also be fractions. We must use a neutral starting value upon finding the min/max value, for 
 example 1000000000.0 or -1000000000.0. If the end result is the neutral value, we will print “No”.
+
+12.oblem: Equal Pairs
+There are 2 * n numbers. The first and the second number form a pair, the third and the fourth number 
+also, and so on. Each pair has a value – the sum of its numbers. Write a program that checks if all pairs 
+have equal value.
+In case the value is the same, print "Yes, value=…" + the value, otherwise, print the maximum 
+difference between two neighboring pairs in format: "No, maxdiff=…" + the maximum difference.
+The input consists of the number n, followed by 2*n integers, all of them one per line.
+Chapter 5.1. Loops (Repetitions) 201
+Sample Input and Output
+Input Output        Comments             Input Output        Comments           Input Output          Comments 
+3     Yes, value=3                       2     No, maxdiff=1                    2     No, maxdiff=2
+1                   values = {3, 3, 3}   1                   values = {3, 4}    -1
+2                   equal values         2                   differences = {1}  2
+0                                        2                max difference = 1    0
+3                                        2                                     -1
+4                  
+-1
+
+Input Output          Input Output           Input Output 
+ 1    Yes, value=10   2     Yes, value=-1    4
+ 5                    -1                     1
+ 5                    0                      1
+                      0                      3
+                     -1                      1
+                                             2
+                                             2
+                                             0
+                                             0
+
+Hints and Guidelines
+We read the input numbers in pairs. For each pair we calculate its sum. While reading the input pairs, 
+for each pair except the first one, we must calculate the difference compared to the previous one. In 
+order to do that, we need to store as a separate variable the sum of the previous pair. Finally, we find 
+the largest difference between two pairs. If it is 0, print “Yes” + the value, otherwise – “No” + the 
+difference.
